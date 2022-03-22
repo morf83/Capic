@@ -1,6 +1,6 @@
-.imgHome {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50px;
+.imgHome, p {
+  width: 70%;
+  margin: auto;
+
 }
+

@@ -15,6 +15,8 @@ import {GalleriaModule} from 'primeng/galleria';
 import { FooterComponent } from './footer/footer.component';
 import {ImageModule} from 'primeng/image';
 import {CarouselModule} from 'primeng/carousel';
+import {MatCardModule} from '@angular/material/card';
+import { regalo } from './regali/regalo';
 
 
 
@@ -26,7 +28,8 @@ import {CarouselModule} from 'primeng/carousel';
     RegaliComponent,
     ContattiComponent,
     HomeComponent,
-    FooterComponent
+    FooterComponent,
+
   ],
   imports: [
     BrowserModule,
@@ -36,7 +39,8 @@ import {CarouselModule} from 'primeng/carousel';
     MatIconModule,
     GalleriaModule,
     ImageModule,
-    CarouselModule
+    CarouselModule,
+    MatCardModule
 
   ],
   providers: [],

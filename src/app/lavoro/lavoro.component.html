@@ -1,1 +1,38 @@
-<p>lavoro works!</p>
+<div class="container">
+  <div class="annunciLavoro">
+    <mat-card>
+      <mat-card-title>{{annuncio.titolo}}</mat-card-title>
+      <mat-card-content>
+        <h4>Descrizione:</h4>{{annuncio.descrizione}}
+        Autore:{{annuncio.autore.nome}}
+        <mat-card-actions>
+          <button>Contatta</button>
+        </mat-card-actions>
+
+      </mat-card-content>
+    </mat-card>
+  </div>
+  <div class="formLavoro">
+    <mat-card>
+    <form>
+      <div class="form-group">
+        <h2>Inserisci il tuo annuncio</h2>>
+        <label for="exampleFormControlInput1">Email</label>
+        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+        <label for="exampleFormControlInput1">Nome</label>
+        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Scrivi il tuo nome..">
+        <label for="exampleFormControlInput1">Tel</label>
+        <input type="tel" class="form-control" id="exampleFormControlInput1" placeholder="Numero di telefono">
+        <label for="exampleFormControlInput1">Titolo</label>
+        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Titolo annuncio">
+
+      </div>
+      <div class="form-group">
+        Inserisci una descrizione:<br>
+        <label for="exampleFormControlTextarea1">Descrizione</label>
+        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+      </div>
+    </form>
+  </mat-card>
+    </div>
+</div>
