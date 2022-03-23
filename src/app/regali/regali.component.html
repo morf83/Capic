@@ -2,15 +2,21 @@
 
 <div class="annunciRegali" *ngFor="let reg of regali">
   <mat-card>
-  <div class="card mb-3" >
-    <img src={{reg.immagini} class="card-img-top" alt="...">
-    <div class="card-body">
-      <h5 class="card-title"><b>{{reg.titolo | uppercase}}</b></h5>
-      <p class="card-text"> {{reg.descrizione}}</p>
-      <p class="card-text"><small class="text-muted">pubblicato da: {{reg.autore}}</small></p>
-    </div>
-  </div>
-</mat-card>
+      <mat-card-title>{{reg.titolo}}</mat-card-title>
+      <mat-card-content>
+        <h4>Descrizione:</h4>
+        <b>{{reg.descrizione}}</b><br>
+        Autore: {{reg.autore}}
+        <mat-card-actions>
+          <button>Contatta</button>
+          <mat-card-actions align="end">
+            <button mat-button>Like</button>
+            <button mat-button>SHARE</button>
+          </mat-card-actions>
+        </mat-card-actions>
+
+      </mat-card-content>
+    </mat-card>
 </div>
 
 

@@ -3,10 +3,15 @@
     <mat-card>
       <mat-card-title>{{ann.titolo}}</mat-card-title>
       <mat-card-content>
-        <h4>Descrizione:</h4>{{ann.descrizione}}
-        Autore:{{ann.autore.nome}}
+        <h4>Descrizione:</h4>
+        <b>{{ann.descrizione}}</b><br>
+        Autore: {{ann.autore.nome}}
         <mat-card-actions>
           <button>Contatta</button>
+          <mat-card-actions align="end">
+            <button mat-button>Like</button>
+            <button mat-button>SHARE</button>
+          </mat-card-actions>
         </mat-card-actions>
 
       </mat-card-content>

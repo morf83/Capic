@@ -2,9 +2,12 @@
   width: 70%;
   margin: auto;
 
+  max-width: 100%;
+  height: auto;
+
 }
 
 .container {
   padding: 40px;
-background-color: rgb(188, 188, 190);
+  background-color: rgb(188, 188, 190);
 }
