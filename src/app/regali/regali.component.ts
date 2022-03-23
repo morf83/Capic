@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { regalo } from './regalo';
+import { REGALI } from './regali';
 @Component({
   selector: 'app-regali',
   templateUrl: './regali.component.html',
@@ -12,15 +13,7 @@ export class RegaliComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  //TO DO -
-  regali:regalo =
-    {
-      id: 1,
-      titolo:'vestiti uomo',
-      immagini:[],
-      descrizione:'vestiti uomo taglia l',
-      autore: 'maria'
-    }
 
+  regali= REGALI;
 
 }

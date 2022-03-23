@@ -1,10 +1,10 @@
 <div class="container">
-  <div class="form-group">
+  <div class="form-group" *ngFor="let ann of annuncio">
     <mat-card>
-      <mat-card-title>{{annuncio.titolo}}</mat-card-title>
+      <mat-card-title>{{ann.titolo}}</mat-card-title>
       <mat-card-content>
-        <h4>Descrizione:</h4>{{annuncio.descrizione}}
-        Autore:{{annuncio.autore.nome}}
+        <h4>Descrizione:</h4>{{ann.descrizione}}
+        Autore:{{ann.autore.nome}}
         <mat-card-actions>
           <button>Contatta</button>
         </mat-card-actions>

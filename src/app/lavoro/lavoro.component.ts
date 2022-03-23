@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ANNUNCI } from './annunci';
 import { Annuncio } from './annuncio';
 
 @Component({
@@ -12,14 +13,5 @@ export class LavoroComponent implements OnInit {
 
   ngOnInit(): void {
   }
-  annuncio:Annuncio = {
-    id: 1,
-    titolo: 'cameriere',
-    descrizione:'turno serale',
-    autore:{
-      nome:'maria',
-      telefono:'0665663373',
-      email:'giorgi@gmail.com'
-    }
-  }
+  annuncio= ANNUNCI;
 }
