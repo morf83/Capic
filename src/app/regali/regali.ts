@@ -4,7 +4,7 @@ export const REGALI: regalo[] = [
   {id: 1,
   titolo: 'fasciatoio',
   immagini: [],
-  descrizione: 'nuovo',
+  descrizione: 'The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan',
   autore: 'maria',
   },
   {id: 2,
