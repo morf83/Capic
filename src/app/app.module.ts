@@ -14,8 +14,9 @@ import { GalleriaModule} from 'primeng/galleria';
 import { ImageModule} from 'primeng/image';
 import { CarouselModule} from 'primeng/carousel';
 import { MatCardModule} from '@angular/material/card';
-import { utente } from './utente';
+import { utente } from './registrazione/utente';
 import { SegnalazioniComponent } from './segnalazioni/segnalazioni.component';
+import { RegistrazioneComponent } from './registrazione/registrazione.component';
 
 
 
@@ -27,7 +28,8 @@ import { SegnalazioniComponent } from './segnalazioni/segnalazioni.component';
     RegaliComponent,
     ContattiComponent,
     HomeComponent,
-    SegnalazioniComponent
+    SegnalazioniComponent,
+    RegistrazioneComponent
 
   ],
 
