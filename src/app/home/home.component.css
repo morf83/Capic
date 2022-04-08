@@ -1,13 +1,21 @@
-.imgHome, p {
-  width: 70%;
-  margin: auto;
 
-  max-width: 100%;
-  height: auto;
+.centro {
+  display:block;
+  margin:0px auto;
+  text-align:center;
+  }
 
-}
+  .container {
+    background-color: aliceblue;
 
-.container {
-  padding: 40px;
-  background-color: rgb(188, 188, 190);
-}
+  }
+
+  .citazione {
+    display:block;
+    margin:0px auto;
+    text-align:center;
+    font-size: x-large;
+    color: navy;
+    padding: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    }

@@ -13,7 +13,6 @@ export class RegaliComponent implements OnInit {
   ngOnInit(): void {
   }
 
-
   regali= REGALI;
 
 }

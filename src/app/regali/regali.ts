@@ -3,7 +3,9 @@ import { regalo } from "./regalo";
 export const REGALI: regalo[] = [
   {id: 1,
   titolo: 'fasciatoio',
-  immagini: [],
+  immagini: [
+
+  ],
   descrizione: 'The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan',
   autore: 'maria',
   },

@@ -1,12 +1,12 @@
-//CONNECTION: mongodb+srv://madao:<password>@cluster0.8i6qn.mongodb.net/<dbname>?retryWrites=true&w=majority
+1//CONNECTION: mongodb+srv://madao:<password>@cluster0.8i6qn.mongodb.net/<dbname>?retryWrites=true&w=majority
 //PASSWORD: 20RHjK1g24rCfqtc
 
 const http = require('http');
 const app = require('./app');
-const bodyParser = requere('body-parser');
+const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
 
-const Thing = require('./models/thing');
+const Thing = require('./app/models/thing');
 
 mongoose.connect('mongodb+srv://madao:20RHjK1g24rCfqtc@cluster0.8i6qn.mongodb.net/<dbname>?retryWrites=true&w=majority')
     .then(() => {

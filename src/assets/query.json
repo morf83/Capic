@@ -1,0 +1,6 @@
+{
+  "nuovoUtente":"insert into user (nome, cognome, email, telefono) values (?,?,?,?)",
+  "nuovoRegalo":"insert into regali (titolo, descrizione, immagini, autore) values(?,?,?,?)",
+  "nuovoLavoro":"insert into lavoro (titolo, descrizione, autore) values (?,?,?)",
+  "login":"SELECT id, password FROM user WHERE username = ? AND password = ?;"
+}

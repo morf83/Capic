@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { LavoroComponent } from './lavoro/lavoro.component';
-import { ContattiComponent } from './contatti/contatti.component';
+import { ContattiComponent } from './footer/contatti/contatti.component';
 import { RegaliComponent } from './regali/regali.component';
 import { SegnalazioniComponent } from './segnalazioni/segnalazioni.component';
 

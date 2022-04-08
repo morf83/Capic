@@ -1,16 +1,16 @@
 var mysql      = require('mysql');
 var connection = mysql.createConnection({
-  host     : 'localhost',
-  user     : 'me',
-  password : 'secret',
-  database : 'my_db'
+  host     : '127.0.0.1',
+  user     : 'root',
+  password : '',
+  database : 'capic'
 });
 
 connection.connect();
 
-connection.query('SELECT 1 + 1 AS solution', function (error, results, fields) {
+connection.query('select nome from user', function (error, results, fields) {
   if (error) throw error;
-  console.log('The solution is: ', results[0].solution);
+  console.log('The solution is: ', results);
 });
 
 connection.end();
