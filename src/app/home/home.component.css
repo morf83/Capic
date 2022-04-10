@@ -1,10 +1,3 @@
-
-.centro {
-  display:block;
-  margin:0px auto;
-  text-align:center;
-  }
-
   .container {
     background-color: aliceblue;
 
@@ -12,10 +5,18 @@
 
   .citazione {
     display:block;
-    margin:0px auto;
+    margin:20px;
     text-align:center;
     font-size: x-large;
     color: navy;
     padding: 20px;
     font-family: 'Courier New', Courier, monospace;
+    background-color: cornsilk;
     }
+
+.sottotitolo {
+  text-align:center;
+  font-family: 'Consolas';
+  color: navy;
+
+}

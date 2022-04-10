@@ -25,28 +25,28 @@
 
   <div class="formRegali">
     <mat-card>
-      <form>
+      <form (ngSubmit)="send()" [formGroup]="formRegali">
         <div class="form-group">
           <h2>Inserisci il tuo annuncio</h2>
-          <label for="exampleFormControlInput1">Email</label><br>
-          <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com"><br>
-          <label for="exampleFormControlInput1">Nome</label><br>
-          <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Scrivi il tuo nome.."><br>
-          <label for="exampleFormControlInput1">Telefono</label><br>
-          <input type="tel" class="form-control" id="exampleFormControlInput1" placeholder="Numero di telefono"><br>
-          <label for="exampleFormControlInput1">Titolo Annuncio</label><br>
-          <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Titolo annuncio"><br>
+          <label >Email</label><br>
+          <input type="email" class="form-control"  placeholder="name@example.com" formControlName="email"><br>
+          <label >Nome</label><br>
+          <input type="text" class="form-control" placeholder="Scrivi il tuo nome.."formControlName="nome"><br>
+          <label >Telefono</label><br>
+          <input type="tel" class="form-control" placeholder="Numero di telefono" formControlName="telefono"><br>
+          <label >Titolo Annuncio</label><br>
+          <input type="text" class="form-control"  placeholder="Titolo annuncio" formControlName="titolo"><br>
         </div>
         <div class="mb-3">
-          <label for="formFileMultiple" class="form-label">Caricare i file</label><br>
-          <input class="form-control" type="file" id="formFileMultiple" multiple>
+          <label  class="form-label">Caricare i file</label><br>
+          <input class="form-control" type="file" formControlName="documenti">
         </div>
         <div class="form-group">
-          <label for="exampleFormControlTextarea1">Descrizione</label>
-          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+          <label >Descrizione</label>
+          <textarea class="form-control"  rows="3" formControlName="descrizione"></textarea>
         </div>
         <div class="invio">
-        <button class="btn btn-primary" type="submit" value="Submit">Invio</button>
+        <button class="btn btn-primary" type="submit" value="Invia">Invio</button>
         </div>
       </form>
     </mat-card>

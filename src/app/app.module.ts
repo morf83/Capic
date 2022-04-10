@@ -5,11 +5,12 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatToolbarModule} from '@angular/material/toolbar';
 import { MatIconModule} from '@angular/material/icon';
-
+import { ReactiveFormsModule } from '@angular/forms';
+import { FormsModule } from '@angular/forms';
 
 import { LavoroComponent } from './lavoro/lavoro.component';
 import { RegaliComponent } from './regali/regali.component';
-import { ContattiComponent } from './footer/contatti/contatti.component';
+import { ContattiComponent } from './contatti/contatti.component';
 import { HomeComponent } from './home/home.component';
 import { GalleriaModule} from 'primeng/galleria';
 import { ImageModule} from 'primeng/image';
@@ -34,7 +35,8 @@ import { NavbarComponent } from './navbar/navbar.component';
     SegnalazioniComponent,
     RegistrazioneComponent,
     FooterComponent,
-    NavbarComponent
+    NavbarComponent,
+
 
   ],
 
@@ -48,7 +50,8 @@ import { NavbarComponent } from './navbar/navbar.component';
     ImageModule,
     CarouselModule,
     MatCardModule,
-
+    ReactiveFormsModule,
+    FormsModule
 
   ],
 

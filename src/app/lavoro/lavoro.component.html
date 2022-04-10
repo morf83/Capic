@@ -21,24 +21,22 @@
 
   <div class="form-group">
     <mat-card>
-    <form action="http://127.0.0.1:3306" method="post">
+    <form (ngSubmit)="send()" [formGroup]="form2">
       <div >
         <h2>Inserisci il tuo annuncio</h2>
-        <label name="email" for="exampleFormControlInput1">Email</label>
-        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com"><br>
-        <label name="nome" for="exampleFormControlInput1">Nome</label>
-        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Scrivi il tuo nome.."><br>
-        <label name="telefono" for="exampleFormControlInput1">Telefono</label>
-        <input type="tel" class="form-control" id="exampleFormControlInput1" placeholder="Numero di telefono"><br>
-      </div>
-      <div >
-        <label name="titolo" for="exampleFormControlInput1">Titolo</label>
-        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Titolo annuncio"><br>
-        <label name="descrizione" for="exampleFormControlTextarea1">Descrizione</label>
-        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea><br>
-      </div>
+        <label name="email" >Email</label>
+        <input type="email" class="form-control"  placeholder="name@example.com" formControlName="email"><br>
+        <label name="nome" >Nome</label>
+        <input type="text" class="form-control"  placeholder="Scrivi il tuo nome.." formControlName="nome"><br>
+        <label name="telefono" >Telefono</label>
+        <input type="tel" class="form-control"  placeholder="Numero di telefono" formControlName="telefono"><br>
 
-        <button class="btn btn-primary" type="submit">Invio</button>
+        <label name="titolo"> Titolo</label>
+        <input type="text" class="form-control"  placeholder="Titolo annuncio" formControlName="titolo"><br>
+        <label name="descrizione" >Descrizione</label>
+        <textarea class="form-control" rows="3" formControlName="descrizione"></textarea><br>
+      </div>
+        <button class="btn btn-primary" type="submit" value="Invia">Invio</button>
     </form>
   </mat-card>
     </div>

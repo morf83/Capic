@@ -25,3 +25,14 @@ a {
   padding: 10px;
   flex: 50%;
 }
+
+h1, h2, h3, h4, h5, h6 {
+
+    display:block;
+    margin:0px auto;
+    text-align:center;
+    padding: 25px;
+    font-family: 'Consolas';
+    color: navy;
+
+}
