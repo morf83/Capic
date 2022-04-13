@@ -7,6 +7,8 @@ import { MatToolbarModule} from '@angular/material/toolbar';
 import { MatIconModule} from '@angular/material/icon';
 import { ReactiveFormsModule } from '@angular/forms';
 import { FormsModule } from '@angular/forms';
+import { MdbRippleModule } from 'mdb-angular-ui-kit/ripple';
+import { MdbFormsModule } from 'mdb-angular-ui-kit/forms';
 
 import { LavoroComponent } from './lavoro/lavoro.component';
 import { RegaliComponent } from './regali/regali.component';
@@ -38,6 +40,7 @@ import { NavbarComponent } from './navbar/navbar.component';
     NavbarComponent,
 
 
+
   ],
 
   imports: [
@@ -51,7 +54,10 @@ import { NavbarComponent } from './navbar/navbar.component';
     CarouselModule,
     MatCardModule,
     ReactiveFormsModule,
-    FormsModule
+    FormsModule,
+    MdbRippleModule,
+    MdbFormsModule
+
 
   ],
 

@@ -7,6 +7,7 @@ import { RegaliComponent } from './regali/regali.component';
 import { SegnalazioniComponent } from './segnalazioni/segnalazioni.component';
 
 const routes: Routes = [
+  {path: '', component: HomeComponent},
   {path: 'home', component: HomeComponent},
   {path: 'contatti', component: ContattiComponent},
   {path: 'lavoro', component: LavoroComponent},

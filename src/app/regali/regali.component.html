@@ -1,6 +1,7 @@
+<!--
 <div class="container">
-
-  <div class="annunciRegali" *ngFor="let reg of regali">
+  <div class="row">
+    <div class="col-sm" *ngFor="let reg of regali">
     <mat-card>
       <mat-card-header>
         <div mat-card-avatar class="example-header-image"></div>
@@ -21,10 +22,57 @@
         </mat-card-content>
       </mat-card>
   </div>
+  </div>
+</div>
+-->
+
+<div class="container">
+  <div class="annunciRegali">
+    <div class="row">
+      <div class="col-12 col-lg-4">
+        <!--start card-->
+        <div class="card-wrapper">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor…</h5>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+          </div>
+        </div>
+      <!--end card-->
+      </div>
+      <div class="col-12 col-lg-4">
+      <!--start card-->
+        <div class="card-wrapper">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor…</h5>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+          </div>
+        </div>
+      <!--end card-->
+      </div>
+      <div class="col-12 col-lg-4">
+      <!--start card-->
+        <div class="card-wrapper">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor…</h5>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+          </div>
+        </div>
+      <!--end card-->
+      </div>
+    </div>
+  </div>
+</div>
 
 
+<div class="container">
   <div class="formRegali">
-    <mat-card>
+    <mat-card class="col-12 col-lg-4">
       <form (ngSubmit)="send()" [formGroup]="formRegali">
         <div class="form-group">
           <h2>Inserisci il tuo annuncio</h2>
@@ -43,7 +91,7 @@
         </div>
         <div class="form-group">
           <label >Descrizione</label>
-          <textarea class="form-control"  rows="3" formControlName="descrizione"></textarea>
+          <textarea class="form-control"  rows="5" formControlName="descrizione"></textarea>
         </div>
         <div class="invio">
         <button class="btn btn-primary" type="submit" value="Invia">Invio</button>

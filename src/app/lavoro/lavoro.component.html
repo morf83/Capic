@@ -21,7 +21,7 @@
 
   <div class="form-group">
     <mat-card>
-    <form (ngSubmit)="send()" [formGroup]="form2">
+    <form (ngSubmit)="send()" [formGroup]="form2" action="http://localhost:3000/nuovolavoro" method="post">
       <div >
         <h2>Inserisci il tuo annuncio</h2>
         <label name="email" >Email</label>

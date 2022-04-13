@@ -1,13 +1,14 @@
 
 .formRegali {
-  padding: 90px;
-  background-color: darkgray;
+  padding: 50px;
+  background-color: rgb(238, 231, 231);
   margin:auto;
 }
 
 .annunciRegali {
-  padding: 40px;
-  background-color: darkgray;
+  padding: 50px;
+
+
 }
 
 .example-card {

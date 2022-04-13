@@ -1,5 +1,4 @@
   .container {
-    background-color: aliceblue;
 
   }
 
@@ -9,7 +8,7 @@
     text-align:center;
     font-size: x-large;
     color: navy;
-    padding: 20px;
+
     font-family: 'Courier New', Courier, monospace;
     background-color: cornsilk;
     }
@@ -19,4 +18,9 @@
   font-family: 'Consolas';
   color: navy;
 
+}
+
+.presentazione {
+  padding: 20px;
+  margin: 20px;
 }
