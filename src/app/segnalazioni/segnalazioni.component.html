@@ -1,32 +1,36 @@
-<div class="formSegnalazioni">
-  <mat-card>
-    <form (ngSubmit)="send()" [formGroup]="formSegnalazioni">
-      <div class="form-group">
-        <h2>Segnalazione Ater</h2>
-        <label >Email</label><br>
-        <input type="email" class="form-control"  placeholder="name@example.com" formControlName="email"><br>
-        <label >Nome</label><br>
-        <input type="text" class="form-control"  placeholder="Scrivi il tuo nome.." formControlName="nome"><br>
-        <label >Cognome</label><br>
-        <input type="text" class="form-control"  placeholder="Scrivi il tuo cognome.." formControlName="cognome"><br>
-        <label >Telefono</label><br>
-        <input type="tel" class="form-control"  placeholder="Numero di telefono" formControlName="telefono"><br>
-        <label >Indirizzo</label><br>
-        <input type="tel" class="form-control"  placeholder="Indirizzo" formControlName="indirizzo"><br>
-        <label >Codice immobile</label><br>
-        <input type="tel" class="form-control"  placeholder="Codice immobile" formControlName="immobile"><br>
-        <label  class="form-label">Caricare i file</label><br>
-        <input class="form-control" type="file" formControlName="documenti" formControlName="documenti"><br>
-        <label >Oggetto segnalazione</label><br>
-        <input type="text" class="form-control"  placeholder="Titolo segnalazione" formControlName="titolo"><br>
-      </div>
-      <div class="form-group">
-        <label >Descrizione</label>
-        <textarea class="form-control"  rows="3" formControlName="descrizione"></textarea>
-      </div><br>
-      <div class="invio">
-        <button class="btn btn-primary" type="submit" value="Invia">Invio</button>
-        </div>
-    </form>
-  </mat-card>
+<div class="content">
+  <div class="col-12 col-lg-4">
+    <div class="formSegnalazioni">
+      <mat-card>
+        <form (ngSubmit)="send()" [formGroup]="formSegnalazioni">
+          <div class="form-group">
+            <h2>Segnalazione Ater</h2>
+            <label >Email</label><br>
+            <input type="email" class="form-control"  placeholder="name@example.com" formControlName="email"><br>
+            <label >Nome</label><br>
+            <input type="text" class="form-control"  placeholder="Scrivi il tuo nome.." formControlName="nome"><br>
+            <label >Cognome</label><br>
+            <input type="text" class="form-control"  placeholder="Scrivi il tuo cognome.." formControlName="cognome"><br>
+            <label >Telefono</label><br>
+            <input type="tel" class="form-control"  placeholder="Numero di telefono" formControlName="telefono"><br>
+            <label >Indirizzo</label><br>
+            <input type="tel" class="form-control"  placeholder="Indirizzo" formControlName="indirizzo"><br>
+            <label >Codice immobile</label><br>
+            <input type="tel" class="form-control"  placeholder="Codice immobile" formControlName="immobile"><br>
+            <label  class="form-label">Caricare i file</label><br>
+            <input class="form-control" type="file" formControlName="documenti" formControlName="documenti"><br>
+            <label >Oggetto segnalazione</label><br>
+            <input type="text" class="form-control"  placeholder="Titolo segnalazione" formControlName="titolo"><br>
+          </div>
+          <div class="form-group">
+            <label >Descrizione</label>
+            <textarea class="form-control"  rows="3" formControlName="descrizione"></textarea>
+          </div><br>
+          <div class="invio">
+            <button class="btn btn-primary" type="submit" value="Invia">Invio</button>
+            </div>
+        </form>
+      </mat-card>
+    </div>
+  </div>
 </div>

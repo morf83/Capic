@@ -3,7 +3,8 @@ p {
   text-align: center;
 
 }
-.container {
-  padding: 40px;
-background-color: darkgray;
-}
+.formContainer {
+    padding: 20px;
+    margin:auto;
+  }
+

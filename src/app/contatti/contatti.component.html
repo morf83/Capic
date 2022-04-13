@@ -1,35 +1,33 @@
 
 <div  class="container">
-  <mat-card>
-  <fieldset>
-    <legend>Contattaci</legend>
-  <div class="formContainer">
-    <form (ngSubmit)="send()" [formGroup]="form">
-      <div class="form-row">
-        <div class="col-md-4 mb-3">
-          <label >Nome</label>
-          <input type="text"  class="form-control"  placeholder="Nome" formControlName="nome" >
+  <div class="col-md-4 mb-3">
+    <mat-card>
+
+        <div class="formContainer">
+          <form (ngSubmit)="send()" [formGroup]="form">
+            <div class="form-row">
+              <div class="">
+                <h2>Contattaci</h2>
+                <label >Nome</label><br>
+                <input type="text"  class="form-control"  placeholder="Nome" formControlName="nome" ><br>
+              </div>
+
+                <label >Cognome</label><br>
+                <input type="text" class="form-control"  placeholder="Cognome" formControlName="cognome" ><br>
+
+                <label >Email</label><br>
+
+                  <input type="text" class="form-control"  placeholder="email" formControlName="email"><br>
+
+              <label  >Example textarea</label><br>
+              <textarea class="form-control"  rows="3" formControlName="messaggio"></textarea><br>
+
+            <button class="btn btn-primary" type="submit" value="Invia">Invio</button>
+          </div></form>
         </div>
-        <div class="col-md-4 mb-3">
-          <label >Cognome</label>
-          <input type="text" class="form-control"  placeholder="Cognome" formControlName="cognome" >
-        </div>
-        <div class="col-md-4 mb-3">
-          <label >Email</label>
-          <div class="input-group">
-            <input type="text" class="form-control"  placeholder="email" formControlName="email">
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4 mb-3">
-        <label  >Example textarea</label>
-        <textarea class="form-control"  rows="3" formControlName="messaggio"></textarea>
-      </div>
-      <button class="btn btn-primary" type="submit" value="Invia">Invio</button>
-    </form>
+
+    </mat-card>
   </div>
-</fieldset>
-</mat-card>
 </div>
 
 
