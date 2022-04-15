@@ -1,23 +1,25 @@
 
 .formRegali {
   padding: 50px;
-
   margin:auto;
 }
 
 .annunciRegali {
-  padding: 50px;
-
-
+  padding: 20px;
 }
 
 .example-card {
   max-width: 400px;
+  margin: 10px;
 }
 
 .example-header-image {
   background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
   background-size: cover;
+}
+.example-image {
+
+  background-size: 100%;
 }
 .invio {
   padding: 5px;

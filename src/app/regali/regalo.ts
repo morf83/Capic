@@ -1,7 +1,7 @@
 export interface regalo {
   id: number;
   titolo: string;
-  immagini: [];
+  immagini: string[];
   descrizione: string;
   autore: string;
 }

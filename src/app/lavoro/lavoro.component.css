@@ -1,5 +1,7 @@
 .form-group {
 padding: 40px;
+display: flex;
+
 
 }
 .descrizione {

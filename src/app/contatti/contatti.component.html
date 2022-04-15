@@ -1,9 +1,9 @@
 
 <div  class="container">
-  <div class="col-md-4 mb-3">
+  <div class="col-12 col-lg-6">
+    <div class="formContainer">
     <mat-card>
 
-        <div class="formContainer">
           <form (ngSubmit)="send()" [formGroup]="form">
             <div class="form-row">
               <div class="">
@@ -24,9 +24,8 @@
 
             <button class="btn btn-primary" type="submit" value="Invia">Invio</button>
           </div></form>
-        </div>
-
     </mat-card>
+   </div>
   </div>
 </div>
 

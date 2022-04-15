@@ -27,44 +27,29 @@
 -->
 
 <div class="container">
+  <h1>Annunci di regali</h1>
   <div class="annunciRegali">
     <div class="row">
-      <div class="col-12 col-lg-4">
-        <!--start card-->
-        <div class="card-wrapper">
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor…</h5>
-              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            </div>
-          </div>
-        </div>
-      <!--end card-->
-      </div>
-      <div class="col-12 col-lg-4">
-      <!--start card-->
-        <div class="card-wrapper">
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor…</h5>
-              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            </div>
-          </div>
-        </div>
-      <!--end card-->
-      </div>
-      <div class="col-12 col-lg-4">
-      <!--start card-->
-        <div class="card-wrapper">
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor…</h5>
-              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            </div>
-          </div>
-        </div>
-      <!--end card-->
-      </div>
+      <div class="col-12 col-lg-4" *ngFor="let reg of regali">
+        <mat-card class="example-card">
+          <mat-card-header>
+            <div mat-card-avatar class="example-header-image"></div>
+            <mat-card-title>{{reg.titolo}}</mat-card-title>
+            <mat-card-subtitle>Autore: {{reg.autore}}</mat-card-subtitle>
+            </mat-card-header>
+            <img mat-card-md-image class="example-image" src="{{reg.immagini[0]}}">
+
+            <mat-card-content>
+              <p>Descrizione:</p>
+              <b>{{reg.descrizione}}</b><br>
+
+              <mat-card-actions align="end">
+                <button mat-button>Contatta</button>
+                  <button  mat-button>Like</button>
+                  <button  mat-button>Condividi</button>
+              </mat-card-actions>
+            </mat-card-content>
+          </mat-card>
     </div>
   </div>
 </div>
@@ -72,7 +57,7 @@
 
 <div class="container">
   <div class="formRegali">
-    <mat-card class="col-12 col-lg-4">
+    <mat-card class="col-12 col-lg-6">
       <form (ngSubmit)="send()" [formGroup]="formRegali">
         <div class="form-group">
           <h2>Inserisci il tuo annuncio</h2>
